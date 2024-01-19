@@ -1,95 +1,57 @@
-import Image from 'next/image'
+
 import styles from './page.module.css'
+
+import { FaEnvelope, FaGithub, FaLinkedin, FaXTwitter } from 'react-icons/fa6'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
+    <>
+    
+    <main className={styles.landing}>
+        <h1 className={[styles.ko, styles.heading].join(" ")}>
+          {"The Scratchpad"}
+          <hr />
+        </h1>
         <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
+        <p className={[styles.purp, styles.caption].join(" ")} style={{marginBottom: "10px"}}>
+          {"Joshua Steele"}<br />
+          <strong>Software Engineer @ Canva</strong><br />
+        </p>
+        <div className={styles.row} style={{
+          justifyContent: "space-between",
+          alignItems: "flex-end",
+          width: "100%",
+        }}>
+          <a href='https://linkedin.com/in/joshuasteele0'>
+            <FaLinkedin />
+          </a>
+          <a href='https://github.com/joshocalico'>
+            <FaGithub />
+          </a>
+          <a href='https://x.com/joshocalico'>
+            <FaXTwitter />
+          </a>
+          <a href='mailto:hello@joshuasteele.net'>
+            <FaEnvelope />
           </a>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+        </div>
+        <p className={styles.lead}>
+          {"Josh is me, this is my place, and tales of my impact outside of it."}
+        </p>
+        
+        <p>
+          &copy; 2024 - Joshua Steele
+        </p>
     </main>
+
+    <p style={{
+      textAlign: "center",
+      fontSize: "0.8em",
+      opacity: 0.5,
+    }}>
+          Still a WIP. More to come. 🚀
+    </p>
+    </>
   )
 }
