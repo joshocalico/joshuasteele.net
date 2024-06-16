@@ -40,7 +40,6 @@ export const Navigation = () => (
           </NavigationMenuLink>
         </Link>
       </NavigationMenuItem>
-
     </NavigationMenuList>
   </NavigationMenu>
 );
