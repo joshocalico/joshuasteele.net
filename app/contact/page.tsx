@@ -18,7 +18,7 @@ export default function Contact() {
         </a>{" "}
         or book a time with me using the form below.
       </p>
-      <p>I'm always open to meeting new interesting people.</p>
+      <p>I&apos;m always open to meeting new interesting people.</p>
 
       <CalendlyWidget />
     </main>

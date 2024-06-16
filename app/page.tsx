@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="flex flex-grow flex-col justify-center container space-y-2 pb-72">
       <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-        Hi! I'm Josh 👋
+        Hi! I&apos;m Josh 👋
       </h1>
 
       <p className="text-muted-foreground text-xl">
@@ -17,7 +17,7 @@ export default function Home() {
 
       <p>
         I work on advanced web applications and other cool stuff. <br />
-        For more about what I'm up to check out my blog, or my projects page.
+        For more about what I&apos;m up to check out my blog, or my projects page.
       </p>
 
       <strong>Want to schedule a coffee with me? ☕️</strong>

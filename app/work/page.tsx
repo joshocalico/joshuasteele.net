@@ -8,14 +8,14 @@ export default function WorkIndex() {
 
       <p>
         Nothing here... but not because I haven&apos;t done anything.
-        <br />I just haven't finished the CMS part of the website yet.
+        <br />I just haven&apos;t finished the CMS part of the website yet.
       </p>
       <p>
         See my{" "}
         <a href="https://github.com/joshocalico" className="underline">
           GitHub
         </a>{" "}
-        for some of the things I'm up to in the interim.
+        for some of the things I&apos;m up to in the interim.
       </p>
     </main>
   );
